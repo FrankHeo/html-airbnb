@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      에어비앤비
+    </title>
+    <link href="../img/air.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/join.css" />
+    <link rel="stylesheet" href="../CSS/login-1.css" />
+  </head>
+  <body>
+    <!-- 첫페이지(main-page) -->
+    <header id="main-page" class="main-page">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="main.html"><img src="../img/logo.svg" width="35px"/></a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="#"><img src="../img/earth.svg" width="12px" />&nbsp한국어(KR)</a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="#">&#8361; KRW</a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="#">숙소호스팅</a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="#">체험호스팅</a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="#">도움말</a>
+        </div>
+        <div class="item">
+          <a href="#" onclick="join_open()" >회원가입</a>
+        </div>
+
+        <div class="item">
+          <a href="#" onclick="login_open()" >로그인</a>
+        </div>
+      </nav>
+
+      <div class="main-form">
+        <div class="text">
+          특색 있는 숙소와 즐길 거리를 예약하세요.
+        </div>
+        <div class="p1">
+          <div class="d1">
+            목적지
+          </div>
+          <div class="d3">
+            <input type="text" class="d3" placeholder="모든 위치" />
+          </div>
+        </div>
+        <div class="p2">
+          <div class="s1">
+            <div class="d1">
+              체크인
+            </div>
+            <div class="b2">
+              <input type="date" class="day1" placeholder="년. 월. 일." />
+            </div>
+          </div>
+
+          <div class="s2">
+          <div class="d1">
+            체크아웃
+          </div>
+          <div class="c2">
+            <input type="date" class="day2" placeholder="년. 월. 일." />
+          </div>
+        </div>
+      </div>
+
+        <div class="p3">
+          <div class="d1">
+            인원
+          </div>
+          <div class="pp2">
+            <input type="text" class="pp3" placeholder="인원" />
+          </div>
+        </div>
+        <div class="search">
+          <button type="submit" class="searchbtn">검색
+        </div>
+      </div>
+      <div class="sub-form">
+        <div class="t1">
+          코로나19 사태에 대한 에어비앤비의 대응
+        </div>
+        <div class="t2">
+          에어비앤비는 2020년 3월 14일까지 예약을 마쳤으며 체크인 날짜가 2020년
+          4월14일 이전인 예약건에 대해, 게스트에게는 예약금 전액 환불을,
+          호스트에게서 수수료 없는 취소 옵션을 제공하고 있습니다. 이 정책은 신규
+          예약에는 적용되지 않습니다.
+        </div>
+        <div class="t3"><a href="">자세히 알아보기</a></div>
+      </div>
+
+      <div class="bottom-text">
+        <a href="">오리건에 있는 300개 이상의 <br />독특한 숙소</a>
+      </div>
+    </header>
+  <!-- 첫페이지(main-page) 끝 -->
+
+  <!-- 서브페이지 시작-->
+  <main class="sub-page">
+    <!-- 에어비앤비 둘러보기 시작 -->
+    <section class="look-around">
+      <div class ="text-1">에이비앤비 둘러보기</div>
+      <div class="wrapper">
+        <div class="home">
+          <div class="picture">
+            <img src = "../img/room.jpg" alt="방">
+          </div>
+          <div class="text">
+            <div class="text-2">숙소</div>
+          </div>
+        </div>
+        <div class="home">
+          <div class="picture">
+            <img src = "../img/acting.jpg"  alt="체험">
+          </div>
+          <div class="text">
+            <div class="text-2">체험</div>
+          </div>
+        </div>
+        <div class="home">
+          <div class="picture">
+            <img src = "../img/cl.webp" alt="어드벤처">
+          </div>
+          <div class="text">
+            <div class="text-2">어드벤처</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 에어비앤비 둘러보기 끝 -->
+    <!-- 에어비앤비 Luxe를 만나 시작 -->
+    <section class="plus">
+      <div class="text-1">에어비앤비 플러스 숙소</div>
+      <div class="text-3">퀄리티와 인테리어 디자인이 검증된 숙소.</div>
+      <div class="wrapper-1">
+        <div class="bg"></div>
+        <div class="bg-text">
+          <img src="../img/logo plus.svg">
+          <div class="bg-btn">숙소 둘러보기  ></div>
+        </div>
+      </div>
+    </section>
+    <!-- 에어비앤비 끝 -->
+    <!-- 전세계숙소 시작 -->
+    <section class ="house">
+      <div class ="text-1">전 세계 숙소</div>
+
+    <div class="container">
+      <div class="box">
+        <img src="../img/1.jpg" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host_1">PLUS</div>
+          <div class="title">베트남</div>
+        
+        </div>
+      <div class="flex_2">
+          <div class="star"><span>&starf;</span> 4.90</div>
+          </div>
+         
+        </div>
+        <div class="detail">I SETTE CONI</div>
+        </div>
+      
+      <div class="box">
+        <img src="../img/2.jpg" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">이탈리아</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.90</div>
+            </div>
+          </div>
+          <div class="detail">Trullo del 1800 in Valle d'ltria</div>
+        </div>
+     
+      <div class="box">
+        <img src="../img/3.jpg" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">프랑스</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.90</div>
+            </div>
+          </div>
+          <div class="detail">La Salentina, sea, nature&relax</div>
+        </div>
+     
+      <div class="box">
+        <img src="../img/4.jpg" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">포루투갈</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.90</div>
+            </div>
+          </div>
+          <div class="detail">Holiday in Style at This Elegant</div>
+      </div>
+          <div class="box">
+            <img src="../img/5.jpg" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">그리스</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">Elegant apartment,central&cheap</div>
+            </div>
+          
+          <div class="box">
+            <img src="../img/6.jpg" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">아이슬란드</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">NAVANA-ROMANTIC SUITE</div>
+            </div>
+         
+          <div class="box">
+            <img src="../img/7.jpg" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">호주</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">The house among olive trees</div>
+            </div>
+          
+    
+          <div class="box">
+            <img src="../img/8.jpg" />
+            <div class="flex">
+            <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">일본</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">In the historical center of Lecce</div>
+        </div>
+
+      </div>
+      <div class="see2"><a href="">보기(2,000개 이상)</a> ></div>
+     </section>
+     <!-- 그리드 1 끝 -->
+     <section class="next">
+      <div class ="text-1">다음 여행에 딱 맞는 독특한 숙소</div>
+      <div class="text-3">이색적인 숙소에 머무르며 조금 색다른 경험을 해보세요.</div>
+
+      <div class="container1">
+        <div class="box1">
+          <img src="../img/9.jpg" />
+          <div class="e1">트리하우스 1,910개</div>
+          <div class="e2">나무 위에서 보내는 하룻밤</div>
+          <div class="e3">
+            세상에 단 하나뿐인 트리하우스에 머무르며 여행의 신세계를 경험해
+            보세요.
+          </div>
+        </div>
+        <div class="box1">
+          <img src="../img/10.webp" />
+          <div class="e1">보트 2,000개 이상</div>
+          <div class="e2">물 위에서 보내는 하룻밤</div>
+          <div class="e3">
+            다양한 모양과 크기의 보트에서 머물며 모험가의 발자취를 따라가 보세요.
+          </div>
+        </div>
+  
+        <div class="box1">
+          <img src="../img/11.jpg" />
+          <div class="e1">유르트 1,820개</div>
+          <div class="e2">글램핑을 위한 숙소</div>
+          <div class="e3">
+            캠핑도 스타일 있게! 대자연 속에서도 안락함을 즐겨보세요.
+          </div>
+        </div>
+     </section>
+     <!-- 그리드 끝 -->
+      <!-- 슈퍼호스트 시작 -->
+    <section class ="house">
+      <div class ="text-1">슈퍼호스트의 숙소</div>
+      <div class="text-3">경험이 풍부한 호스트의 숙소에서 편안히 머물러보세요.</div>
+
+    <div class="container">
+      <div class="box">
+        <img src="../img/12.webp" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">멕시코</div>
+        
+        </div>
+      <div class="flex_2">
+          <div class="star"><span>&starf;</span> 4.70</div>
+          </div>
+         
+        </div>
+        <div class="detail">The World Famous Seashell House ~ Casa Caracol</div>
+        </div>
+      
+      <div class="box">
+        <img src="../img/13.jpg" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">인도네시아</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.90</div>
+            </div>
+          </div>
+          <div class="detail">HIDEOUT BALI - Eco Bamboo Home</div>
+        </div>
+     
+      <div class="box">
+        <img src="../img/14.webp" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">콜롬비아</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.88</div>
+            </div>
+          </div>
+          <div class="detail">Romantic Cabana with view</div>
+        </div>
+     
+      <div class="box">
+        <img src="../img/15.webp" />
+        <div class="flex">
+          <div class="flex_1">
+          <div class="host">슈퍼호스트</div>
+          <div class="title">미국</div>
+        </div>
+        <div class="flex_2">
+            <div class="star"><span>&starf;</span> 4.90</div>
+            </div>
+          </div>
+          <div class="detail">The Joshua Tree House</div>
+      </div>
+          <div class="box">
+            <img src="../img/16.webp" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">미국</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">The Mushroom Dome Retreat & LAND of Paradise Suite</div>
+            </div>
+          
+          <div class="box">
+            <img src="../img/17.jpg" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">미국</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">Underground Hygge</div>
+            </div>
+         
+          <div class="box">
+            <img src="../img/18.webp" />
+            <div class="flex">
+              <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">영국</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">Live in an historic English Castle!</div>
+            </div>
+          
+    
+          <div class="box">
+            <img src="../img/19.jpg" />
+            <div class="flex">
+            <div class="flex_1">
+              <div class="host">슈퍼호스트</div>
+              <div class="title">아이슬란드</div>
+            </div>
+            <div class="flex_2">
+                <div class="star"><span>&starf;</span> 4.90</div>
+                </div>
+              </div>
+              <div class="detail">Amazing view - Moderne apartment</div>
+        </div>
+
+      </div>
+      <div class="see2"><a href="">보기(2,000개 이상)</a> ></div>
+     </section>
+
+     <!-- 마무리 -->
+     <section class="footer">
+      
+       <div class="flex">
+         <div class="f1">
+          <div class="t1">에어비앤비</div>
+          <div class="t2"><a href="">뉴스</a></div>
+          <div class="t2"><a href="">정책</a></div>
+          <div class="t2"><a href="">다양성과 소속감</a></div>
+          <div class="t2"><a href="">접근성</a></div>
+         </div>
+         <div class="f2">
+          <div class="t1">여행하기</div>
+          <div class="t2"><a href="">신뢰와 안전</a></div>
+          <div class="t2"><a href="">여행크레딧</a></div>
+          <div class="t2"><a href="">비즈니스 프로그램</a></div>
+          <div class="t2"><a href="">즐길 거리</a></div>
+
+         </div>
+         <div class="f3">
+          <div class="t1">호스팅하기</div>
+          <div class="t2"><a href="">호스팅의 장점</a></div>
+          <div class="t2"><a href="">책임감 있는 호스팅하기</a></div>
+          <div class="t2"><a href="">커뮤니티 센터</a></div>
+          <div class="t2"><a href="">체험 호스팅</a></div>
+
+         </div>
+         <div class="f4">
+          <div class="t1">고객지원</div>
+          <div class="t2"><a href="">도움말</a></div>
+          <div class="t2"><a href="">에어비앤비 이웃 민원 지원</a></div>
+          
+
+         </div>
+
+
+
+       </div>
+       
+       <div class="flex1">
+         <!-- <div class="hr1"><span><hr></span></div> -->
+         <div class="i0"><img src="../img/logo-1.svg"></div>
+         <div class="i1">© 2020 Airbnb, Inc. All rights reserved.</div>
+         <div class="i2"><a href="">이용약관</a></div>
+         <div>.</div>
+         <div class="13"><a href="">개인정보 처리방침</a></div>
+         <div>.</div>
+
+         <div class="14"><a href="">여행지 찾기</a></div>
+         <div class="i5"><img src="../img/face.svg"></div>
+         <div class="i6"><img src="../img/twi.svg"></div>
+         <div class="i7"><img src="../img/ins.svg"></div>
+         <div class="i8"><img src="../img/blog.svg"></div>
+         <div class="i9"><img src="../img/post.svg"></div>
+         
+
+       </div>
+
+     </section>
+    
+
+  </main>
+   <!-- 조인팝업창 시작 -->
+   <div id="join-popup" class="join-popup">
+    <!-- 조인 윈도우창 시작 -->
+    <div class="join-window">
+      <div class="close-button">
+        <!-- 닫는버튼 -->
+        <button onclick="join_close()">
+          <img src="../img/close.svg" width="14px" />
+        </button>
+      </div>
+      <div class="fbook-login form">
+        <div><img src="../img/facebook.svg" width="15px" /></div>
+        &nbsp&nbsp
+        <div>페이스북계정으로 로그인</div>
+      </div>
+      <div class="google-login form">
+        <div><img src="../img/google.svg" width="15px" /></div>
+        &nbsp&nbsp
+        <div>
+          구글계정으로 로그인
+        </div>
+      </div>
+      <div class="line-combo">
+        <div class="line-left"></div>
+        <span>&nbsp&nbsp&nbsp또는&nbsp&nbsp&nbsp</span>
+        <div class="line-right"></div>
+      </div>
+      <div class="email-join form">
+        <div><img src="../img/email.svg" width="15px" /></div>
+        &nbsp&nbsp
+        <div>이메일로 회원가입</div>
+      </div>
+      <div class="line"></div>
+      <div class="login">
+        <div>이미 에어비앤비 계정이 있나요?</div>
+        &nbsp&nbsp
+        <div class="login-btn">
+          <a href="grid-1.html">로그인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 로그인팝업창 시작 -->
+  <div id="login-popup" class="login-popup">
+    <!-- 로그인 윈도우창 시작 -->
+    <div class="login-window">
+      <div class="close-button">
+        <!-- 닫는버튼 -->
+        <button onclick="login_close()">
+          <img src="../img/close.svg" width="14px" />
+        </button>
+      </div>
+      <div class="fbook-login form">
+        <div><img src="../img/facebook.svg" width="15px" /></div>
+        &nbsp&nbsp
+        <div>페이스북계정으로 로그인</div>
+      </div>
+      <div class="google-login form">
+        <div><img src="../img/google.svg" width="15px" /></div>
+        &nbsp&nbsp
+        <div>
+          구글계정으로 로그인
+        </div>
+      </div>
+      <div class="line-combo">
+        <div class="line-left"></div>
+        <span>&nbsp&nbsp&nbsp또는&nbsp&nbsp&nbsp</span>
+        <div class="line-right"></div>
+      </div>
+
+      <div class="email-id">
+        <div>
+          <input
+            type="text"
+            class="text_input"
+            placeholder="이메일 주소"
+            style="background:url(../img/emaillogin.svg);
+            background-position:right center; 
+             background-repeat:no-repeat;
+             background-size: 20px;"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            class="text_input"
+            placeholder="비밀번호"
+            style="background:url(../img/password.svg);
+            background-position:right center; 
+             background-repeat:no-repeat;
+             background-size: 20px;"
+          />
+        </div>
+        <div class="flex3">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" style="margin-bottom:15px" />
+              비밀번호 저장
+            </label>
+          </div>
+          <div class="see"><a href="">비밀번호 보기</a></div>
+        </div>
+        <div class="flex4">
+          <div>
+            <a href="">전화번호로 로그인</a><span>.</span>
+            <a href="">비밀번호가 생각나지 않으세요?</a>
+          </div>
+        </div>
+        <div class="login-btn">
+          <button type="submit" class="loginBtn">로그인</button>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="join">
+        <div>에어비앤비 계정이 없으세요?</div>
+        &nbsp&nbsp
+        <div class="join-btn">
+          <a href="join.html">회원가입</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 조인팝업창 끝 -->
+  <script>
+    var join_popup = document.getElementById("join-popup");
+    function join_close() {
+      join_popup.style.display = "none";
+    }
+    function join_open() {
+      join_popup.style.display = "block";
+    }
+    var login_popup = document.getElementById("login-popup");
+      function login_close() {
+        login_popup.style.display = "none";
+      }
+      function login_open() {
+        login_popup.style.display = "block";
+      }
+  </script>
+    </body>
+</html>

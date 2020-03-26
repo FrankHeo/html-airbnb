@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont;
+}
+.main-page {
+  height: 100%;
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-nav {
+  padding: 30px;
+  height: 110px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav .logo {
+  margin-right: auto;
+}
+.main-nav .item a {
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
+.main-nav .item a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+}
+
+.main-nav .item {
+  margin-left: 30px;
+}
+
+.main-form {
+  background-color: white;
+  margin-left: 8%;
+  margin-top: 1%;
+  padding: 25px 32px 24px 32px;
+  width: 441px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.main-form .text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  color: rgb(80, 80, 80);
+}
+.main-form .d1 {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+.sub-form {
+  background-color: white;
+  margin-left: 8%;
+  margin-top: 1%;
+  padding: 15px 35px 24px 27px;
+  width: 441px;
+  border-radius: 4px;
+  border-top: 7px solid orange;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.bottom-text {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-weight: 800;
+  font-size: 14px;
+
+  text-align: right;
+}
+.bottom-text a {
+  text-decoration: none;
+  color: white;
+}
+.bottom-text a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.sub-form .t1 {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.sub-form .t2 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: grey;
+}
+.sub-form .t3 a {
+  font-weight: 800;
+  color: black;
+  font-size: 14px;
+}
+.main-form .d3,
+.main-form .pp3 {
+  color: #595b5f;
+  width: 375px;
+  height: 50px;
+  padding: 0px 0px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.main-form .p2 {
+  display: flex;
+}
+.main-form .day1,
+.main-form .day2 {
+  color: #595b5f;
+  width: 188px;
+  height: 50px;
+  padding: 0px 0px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.main-form .day1 {
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+}
+.main-form .day2 {
+  border-radius: 0px 4px 4px 0px;
+}
+.main-form .pp3 {
+  margin-top: 10px;
+}
+.searchbtn {
+  background-color: rgb(219, 99, 109);
+  color: white;
+  border: 2px solid rgb(219, 99, 109);
+  cursor: pointer;
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 6px 0px;
+  margin-left: 295px;
+}
+/* 메인페이지 끝 */
+/* 서브페이지 시작 */
+.sub-page {
+  margin-top: 30px;
+  padding: 0px 7%;
+}
+.sub-page .text-1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.sub-page .text-2 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.sub-page .text-3 {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.look-around .wrapper {
+  display: flex;
+  width: auto;
+}
+.look-around .wrapper .home {
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
+  height: 88px;
+  width: 550px;
+  cursor: pointer;
+  margin: 30px 20px 80px 0px;
+}
+.look-around .wrapper .home img {
+  height: 88px;
+  width: 124px;
+  border-radius: 10px 0px 0px 10px;
+}
+.sub-page .plus .bg {
+  background-image: url(../img/table.jpg);
+  height: 300px;
+  width: 1650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1700px 300px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.sub-page .plus .bg-text {
+  background-color: rgba(0, 0, 0, 0);
+  /*rgba에서 a 는 투명도*/
+
+  font-weight: bold;
+
+  position: absolute;
+  top: 1350px;
+  left: 43%;
+
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+}
+.sub-page .plus .bg-btn {
+  border: 1px solid #f1f1f1;
+  font-size: 10px;
+  background-color: white;
+  padding: 6px 15px;
+  width: 130px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* 하우스 섹션 */
+.house {
+  padding-top: 10px;
+}
+.house .container {
+  display: grid;
+  /*열을 설정*/
+  grid-template-columns: repeat(4, 400px);
+  /* grid-template-rows: 50px 100px; */
+  grid-auto-rows: 330px;
+  grid-gap: 15px;
+  margin-top: 30px;
+}
+.house .box {
+  cursor: pointer;
+}
+.house img {
+  width: 400px;
+  height: 240px;
+  margin-bottom: 10px;
+}
+.house .flex_1 {
+  display: flex;
+}
+.house .flex {
+  display: flex;
+}
+.house .flex_2 {
+  margin-left: auto;
+}
+.house .host {
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+.house .host_1 {
+  font-size: 12px;
+  background: rgb(158, 31, 95);
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+.house .title {
+  color: grey;
+  margin-left: 7px;
+  font-size: 15px;
+}
+
+.house .star span {
+  color: red;
+  font-size: 15px;
+}
+.house .star {
+  font-size: 14px;
+  margin-left: auto;
+}
+.house .detail {
+  font-size: 17px;
+}
+.house .see2 a {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: 4px;
+}
+.house .see2 {
+  margin-bottom: 50px;
+  height: 40px;
+  padding: 10px;
+  width: 180px;
+}
+.house .see2:hover {
+  background-color: rgb(236, 235, 235);
+
+  width: 180px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-radius: 6px;
+}
+/* 전세계숙소 끝 */
+/* 다음여행 시작 */
+.next {
+  padding-top: 20px;
+}
+.next .container1 {
+  display: grid;
+  /*열을 설정*/
+  grid-template-columns: repeat(3, 535px);
+  /* grid-template-rows: 50px 100px; */
+  grid-auto-rows: 450px;
+  grid-gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.next .box1 {
+  cursor: pointer;
+}
+.next img {
+  width: 540px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.next .e1 {
+  font-size: 12px;
+  color: #85888d;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.next .e2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.next .e3 {
+  font-size: 14px;
+}
+/* 다음여행 끝 */
+.footer {
+  padding: 40px;
+}
+.footer .flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  border-top: 0.1px solid #c2c3c7;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.footer .flex .t1 {
+  color: rgb(65, 64, 64);
+  font-weight: bold;
+  margin-left: 5px;
+  padding-bottom: 15px;
+}
+.footer .flex .t2 {
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.footer .flex .f1 {
+  margin-right: 110px;
+}
+.footer .flex .f2 {
+  margin-right: 110px;
+}
+.footer .flex .f3 {
+  margin-right: 110px;
+}
+
+.footer .flex1 {
+  padding-top: 10px;
+  display: flex;
+  margin-left: 20%;
+  font-size: 14px;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  width: 1000px;
+  border-top: 0.1px solid #c2c3c7;
+  padding-bottom: 20px;
+}
+
+.footer .flex1 img {
+  margin-left: 10px;
+  width: 20px;
+}
+.footer .i1 {
+  padding-left: 5px;
+}
+.footer .i5 {
+  margin-left: 270px;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+
+  margin-left: 5px;
+}
+.footer a:hover {
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+/* 함수 */
